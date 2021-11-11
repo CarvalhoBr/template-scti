@@ -1,5 +1,4 @@
-import nodemailer from 'nodemailer';
-import ApiException from '../exceptions/ApiException';
+import nodemailer from 'nodemailer';;
 import ConsumerException from '../exceptions/ConsumerException';
 
 export default class EmailService {

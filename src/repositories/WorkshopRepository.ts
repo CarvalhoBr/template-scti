@@ -1,11 +1,8 @@
 import NotFoundException from "../exceptions/NotFoundException";
-import { IWorkshopWithRating } from "../interfaces/IWorkshopWithRating";
 import Speaker from "../models/Speaker";
 import { Workshop } from "../models/Workshop";
-import { BaseRepository } from "./BaseRepository";
-
-export default class WorkshopRepository extends BaseRepository<Workshop>{
-  protected model = Workshop
+export default class WorkshopRepository{
+  private model = Workshop
 
   static getInstance(): WorkshopRepository {
     return new WorkshopRepository();
